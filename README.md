@@ -64,7 +64,7 @@ sudo pacman -S neovim git nodejs npm jdk-openjdk
 sudo pacman -S ripgrep fd
 
 # Clone this configuration
-git clone <your-repo-url> ~/.config/nvim
+git clone https://github.com/JacobSmxth/smithvim/ ~/.config/nvim
 # OR backup existing config and copy files
 mv ~/.config/nvim ~/.config/nvim.backup
 # Copy your smithvim files to ~/.config/nvim/
@@ -85,7 +85,7 @@ sudo apt install neovim git nodejs npm default-jdk
 sudo apt install ripgrep fd-find
 
 # Clone this configuration
-git clone <your-repo-url> ~/.config/nvim
+git clone https://github.com/JacobSmxth/smithvim/ ~/.config/nvim
 # OR backup existing config and copy files
 mv ~/.config/nvim ~/.config/nvim.backup
 # Copy your smithvim files to ~/.config/nvim/
@@ -117,7 +117,7 @@ sudo zypper install neovim git nodejs npm java-17-openjdk-devel
 sudo zypper install ripgrep fd
 
 # Clone this configuration
-git clone <your-repo-url> ~/.config/nvim
+git clone https://github.com/JacobSmxth/smithvim/ ~/.config/nvim
 # OR backup existing config and copy files
 mv ~/.config/nvim ~/.config/nvim.backup
 # Copy your smithvim files to ~/.config/nvim/
