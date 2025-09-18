@@ -45,11 +45,110 @@ A clean, Java-first Neovim configuration built on LazyVim with minimal UI and ma
 
 ## Installation
 
-This configuration is designed to work with an existing LazyVim setup:
+### Prerequisites
 
-1. Clone or copy these configuration files to your `~/.config/nvim/`
-2. Run `nvim` to install plugins automatically
+**All distributions require:**
+- Neovim >= 0.9.0
+- Git
+- A Nerd Font (optional, not used in this config but some plugins may benefit)
+- Node.js >= 16 (for TypeScript/JavaScript support)
+- Java 17+ (for Java development)
+
+### Arch Linux
+
+```bash
+# Install Neovim and dependencies
+sudo pacman -S neovim git nodejs npm jdk-openjdk
+
+# Optional: Install ripgrep and fd for better performance
+sudo pacman -S ripgrep fd
+
+# Clone this configuration
+git clone <your-repo-url> ~/.config/nvim
+# OR backup existing config and copy files
+mv ~/.config/nvim ~/.config/nvim.backup
+# Copy your smithvim files to ~/.config/nvim/
+```
+
+### Ubuntu/Debian
+
+```bash
+# Update package list
+sudo apt update
+
+# Install Neovim (may need PPA for latest version)
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt update
+sudo apt install neovim git nodejs npm default-jdk
+
+# Optional: Install ripgrep and fd for better performance
+sudo apt install ripgrep fd-find
+
+# Clone this configuration
+git clone <your-repo-url> ~/.config/nvim
+# OR backup existing config and copy files
+mv ~/.config/nvim ~/.config/nvim.backup
+# Copy your smithvim files to ~/.config/nvim/
+```
+
+### Fedora/RHEL/CentOS
+
+```bash
+# Install Neovim and dependencies
+sudo dnf install neovim git nodejs npm java-17-openjdk-devel
+
+# Optional: Install ripgrep and fd for better performance
+sudo dnf install ripgrep fd-find
+
+# Clone this configuration
+git clone <your-repo-url> ~/.config/nvim
+# OR backup existing config and copy files
+mv ~/.config/nvim ~/.config/nvim.backup
+# Copy your smithvim files to ~/.config/nvim/
+```
+
+### openSUSE
+
+```bash
+# Install Neovim and dependencies
+sudo zypper install neovim git nodejs npm java-17-openjdk-devel
+
+# Optional: Install ripgrep and fd for better performance
+sudo zypper install ripgrep fd
+
+# Clone this configuration
+git clone <your-repo-url> ~/.config/nvim
+# OR backup existing config and copy files
+mv ~/.config/nvim ~/.config/nvim.backup
+# Copy your smithvim files to ~/.config/nvim/
+```
+
+### Other Distributions
+
+For other Linux distributions, ensure you have:
+- Neovim >= 0.9.0
+- Git
+- Node.js >= 16 and npm
+- Java 17+
+- Optional: ripgrep and fd for better search performance
+
+Then follow the same configuration setup:
+```bash
+# Backup existing config if present
+mv ~/.config/nvim ~/.config/nvim.backup
+
+# Copy or clone smithvim configuration
+# Copy your smithvim files to ~/.config/nvim/
+```
+
+### First Run
+
+After installation:
+
+1. Start Neovim: `nvim`
+2. LazyVim will automatically install all plugins (this may take a few minutes)
 3. Mason will install required language servers and tools
+4. Restart Neovim once installation is complete
 
 ## Required Tools (Installed via Mason)
 
